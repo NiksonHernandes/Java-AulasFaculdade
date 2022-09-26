@@ -4,6 +4,17 @@ public class Orcamento {
 	private Peca peca[];
 	private MaoDeObra maodeobra;
 	
+	public double getTotal() {
+		double x = this.maodeobra.getCusto();
+		double somaPecas = 0;
+		
+		for(int i = 0; i < peca.length; i++) {
+			somaPecas = somaPecas + this.peca[i].getValor();
+		}		
+		
+		return x + somaPecas;
+	}
+	
 	public long getNumero() {
 		return numero;
 	}
