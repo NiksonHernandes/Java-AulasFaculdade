@@ -6,6 +6,7 @@ public class Orcamento {
 	
 	public double getTotal() {
 		double x = this.maodeobra.getCusto();
+		
 		double somaPecas = 0;
 		
 		for(int i = 0; i < peca.length; i++) {
